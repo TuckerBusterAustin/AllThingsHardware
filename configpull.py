@@ -1,17 +1,19 @@
+#Author: Tucker Billimek
+
 import os
 import paramiko
 import concurrent.futures
 
 # log in data
 remote_hosts = []
-file_path = 'INSERT FILE PATH
+file_path = 'INSERT FILE PATH'
 with open(file_path, 'r') as file:
         for line in file:
             remote_hosts.append(line.strip())
 print(remote_hosts)
 
 remote_user = "username"
-remote_pass = "passwor"
+remote_pass = "password"
 
 
 #log file paths
